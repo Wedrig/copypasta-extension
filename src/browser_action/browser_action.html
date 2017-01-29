@@ -1,5 +1,8 @@
 <script src="script/beemovie.js"></script>
 <script src="script/shrek2.js"></script>
+<script src="script/shrek3.js"></script>
+<script src="script/thelegend27.js"></script>
+<script src="script/ratatouille.js"></script>
 <script src="main.js"></script>
 
 
@@ -8,35 +11,40 @@
 		margin: 0;
 	}
 	#d {
-		height: 310px;
-		width: 300px;
-		background: linear-gradient(141deg, #4286f4, #2cb5e8);
+		width: 250px;
+		background: #ff7a3d;
 		color: #fff;
-		font-family: Segoe UI, sans-serif;
-		padding-top: 50px;
-		padding: 10px;
 	}
 	button {
 		width: 100%;
 		margin: 0;
-		background: none;
 		border: none;
 		font-size: 20px;
-		color: #111;
 		border-radius: 2px;
 		cursor: pointer;
-		background: #fff;
-		margin-bottom: 10px;
-		padding: 15px;
+		background: transparent;
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		color: #fff;
+		transition: 0.2s background;
+		font-family: Brandon Text,sans-serif;
+		font-weight: 400;
+		border-left: rgba(44, 43, 43, 0.23) solid 9px;
+		text-align: left;
 	}
 	button:hover {
-		background: #e1e1e1;
+		background: rgba(44, 43, 43, 0.23);
+		transition: 0.2s background;
 	}
 </style>
 
 <div id="d">
 	<div class="c">
 		<button id="beemoviebutton">Bee Movie Script</button>
+		<button id="ratatouillebutton">Ratatouille Script</button>
 		<button id="shrek2button">Shrek 2 Script</button>
+		<button id="shrek3button">Shrek the Third Script</button>
+		<button id="thelegend27button">TheLegend27 Script</button>
 	</div>
 </div>

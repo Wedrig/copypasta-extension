@@ -9,4 +9,13 @@ window.onclick = function(event) {
 	if (event.target == shrek2button) {
         copy(shrek2script);
     }
+	if (event.target == shrek3button) {
+        copy(shrek3);
+    }
+	if (event.target == thelegend27button) {
+        copy(thelegend27);
+    }
+	if (event.target == ratatouillebutton) {
+        copy(rat);
+    }
 }
