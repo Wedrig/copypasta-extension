@@ -11,4 +11,8 @@ window.onclick = function(event) {
 	if (event.target == mariobutton) {copy(mario.innerHTML);}
 	if (event.target == ruskibutton) {copy(ruski.innerHTML);}
 	if (event.target == pepebutton) {copy(pepe.innerHTML);}
+	if (event.target == yeebutton) {copy(yee.innerHTML);}
+	if (event.target == birdbutton) {copy(bird.innerHTML);}
+	if (event.target == adogbutton) {copy(annoyingdog.innerHTML);}
+	if (event.target == seagullbutton) {copy(seagull.innerHTML);}
 }
