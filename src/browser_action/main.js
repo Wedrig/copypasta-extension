@@ -1,5 +1,5 @@
 copy = function(r) {
-	prompt("Copy this! Ctrl+C or Command+C on Macs",r);
+	d.innerHTML="Ctrl+C or Command+C<br><textarea>"+r+"</textarea>"
 }
 
 window.onclick = function(event) {
@@ -15,4 +15,5 @@ window.onclick = function(event) {
 	if (event.target == birdbutton) {copy(bird.innerHTML);}
 	if (event.target == adogbutton) {copy(annoyingdog.innerHTML);}
 	if (event.target == seagullbutton) {copy(seagull.innerHTML);}
+	if (event.target == bobbutton) {copy(bob.innerHTML);}
 }
