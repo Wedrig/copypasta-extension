@@ -1,5 +1,6 @@
 copy = function(r) {
-	d.innerHTML="Ctrl+C or Command+C<br><textarea>"+r+"</textarea>"
+	d.style.width="450px"
+	d.innerHTML="<textarea>"+r+"</textarea>"
 }
 
 window.onclick = function(event) {
@@ -16,4 +17,8 @@ window.onclick = function(event) {
 	if (event.target == adogbutton) {copy(annoyingdog.innerHTML);}
 	if (event.target == seagullbutton) {copy(seagull.innerHTML);}
 	if (event.target == bobbutton) {copy(bob.innerHTML);}
+	if (event.target == dogebutton) {copy(doge.innerHTML);}
+	if (event.target == sanicbutton) {copy(sanic.innerHTML);}
+	if (event.target == letoucanbutton) {copy(letoucan.innerHTML);}
+	if (event.target == shrekbutton) {copy(shrek);}
 }
