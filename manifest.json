@@ -1,9 +1,8 @@
 {
   "name": "Copypasta",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "manifest_version": 2,
   "description": "Copy text to spam your friends with!",
-  "homepage_url": "http://extensionizr.com",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -13,9 +12,6 @@
   "browser_action": {
     "default_icon": "icons/icon19.png",
     "default_title": "Copypasta",
-    "default_popup": "src/browser_action/browser_action.html"
-  },
-  "permissions": [
-    "clipboardWrite"
-  ]
+    "default_popup": "src/index.html"
+  }
 }

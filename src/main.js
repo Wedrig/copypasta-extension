@@ -2,7 +2,6 @@ copy = function(r) {
 	d.style.width="450px"
 	d.innerHTML="<textarea>"+r+"</textarea>"
 }
-
 window.onclick = function(event) {
     if (event.target == beemoviebutton) {copy(beemovie);}
 	if (event.target == shrek2button) {copy(shrek2script);}
@@ -21,4 +20,11 @@ window.onclick = function(event) {
 	if (event.target == sanicbutton) {copy(sanic.innerHTML);}
 	if (event.target == letoucanbutton) {copy(letoucan.innerHTML);}
 	if (event.target == shrekbutton) {copy(shrek);}
+	if (event.target == mariojbutton) {copy(mariojump.innerHTML);}
+	if (event.target == mariopbutton) {copy(mariopoop.innerHTML);}
+	if (event.target == obamalargebutton) {copy(obamalarge.innerHTML);}
+	if (event.target == obamasmallbutton) {copy(obamasmall.innerHTML);}
+	if (event.target == dealwithitbutton) {copy(dealwithit.innerHTML);}
+	if (event.target == bigsmokebutton) {copy(bigsmoke);}
+	if (event.target == navysealsbutton) {copy(navyseal);}
 }

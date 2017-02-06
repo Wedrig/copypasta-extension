@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-size: 15px;
+}
+#d {
+    height: 600px;
+    overflow-y: scroll;
+    width: 350px;
+    background: #fff;
+    color: #111;
+}
+button {
+    width: 100%;
+    margin: 0;
+    border: none;
+    background: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    color: #111;
+    transition: 0.2s background;
+    font-family: Futura, sans-serif;
+    font-weight: 400;
+    border-bottom: 2px solid #ccc;
+    text-align: left;
+    outline: none;
+}
+h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: 500;
+}
+button:hover {
+    background: rgba(44, 43, 43, 0.13);
+    transition: 0.2s background;
+}
+r {
+    visibility: none;
+}
+textarea {
+    border: none;
+    background: #fff;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    background: #fff;
+    outline: none;
+    resize: none;
+}
+a {
+    color: #4286f4;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.warning {
+	background: #b73c21;
+	font-size: 13px;
+	vertical-align: center;
+	color: #fff;
+	padding: 5px;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
