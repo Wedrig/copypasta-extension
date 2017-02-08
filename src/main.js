@@ -2,29 +2,45 @@ copy = function(r) {
 	d.style.width="450px"
 	d.innerHTML="<textarea>"+r+"</textarea>"
 }
+aa=["annoyingDog","beeMovie","bigSmoke","bob","dealWithIt",
+	"doge","pacertest","hammerAndSickle","leToucan","mario",
+	"marioJumping","marioPooping","navySeals",'obamaNotBadBig',
+	"obamaNotBadSmall","pepe","ratatouille","sanicHegehog",
+	"seagull","shrek2","shrek","shrek3","suprisedBird","theLegend27",
+	"yee"];
+stuff={
+	"annoyingDog":				["Annoying Dog",					annoyingdog.innerHTML],
+	"beeMovie":					["Bee Movie Script",				beemovie],
+	"bigSmoke":					["Big Smoke's Order",				bigsmoke],
+	"bob":                      ["Bob",								bob.innerHTML],
+	"dealWithIt":				["Deal with it",					dealwithit.innerHTML],
+	"doge":						["Doge",							doge.innerHTML],
+	"pacertest":				["FitnessGram Pacer Test",			pacertest],
+	"hammerAndSickle":			["Hammer and Sickle",				ruski.innerHTML],
+	"leToucan":                 ["Le Toucan",						letoucan.innerHTML],
+	"mario":					["Mario",							mario.innerHTML],
+	"marioJumping":				["Mario Jumping",					mariojump.innerHTML],
+	"marioPooping":				["Mario Pooping",					mariopoop.innerHTML],
+	"navySeals":				["Navy Seals Copypasta",			navyseal],
+	'obamaNotBadBig':			["Obama Not Bad (Big)",				obamalarge],
+	"obamaNotBadSmall":			["Obama Not Bad (Small)",			obamasmall],
+	"pepe":						["Pepe The Frog",					pepe.innerHTML],
+	"ratatouille":				["Ratatouille Script",				rat.innerHTML],
+	"sanicHegehog":				["Sanic Hegehog",					sanic.innerHTML],			
+	"seagull":					["Seagull",							seagull.innerHTML],	
+	"shrek2":					["Shrek 2 Script",					shrek2script],
+	"shrek":					["Shrek Script",					shrek],
+	"shrek3":					["Shrek The Third Script",			shrek3],
+	"suprisedBird":				["Suprised Bird",					bird.innerHTML],
+	"theLegend27":				["TheLegend27 Script",				thelegend27],
+	"yee":						["Yee",								yee.innerHTML]
+}
+for (i=0;i<aa.length;i++) {
+	buttons.innerHTML+=`<button id="b_`+aa[i]+`">`+stuff[aa[i]][0]+`</button>`
+}
 window.onclick = function(event) {
-    if (event.target == beemoviebutton) {copy(beemovie);}
-	if (event.target == shrek2button) {copy(shrek2script);}
-	if (event.target == shrek3button) {copy(shrek3);}
-	if (event.target == thelegend27button) {copy(thelegend27);}
-	if (event.target == ratatouillebutton) {copy(rat);}
-	if (event.target == mariobutton) {copy(mario.innerHTML);}
-	if (event.target == ruskibutton) {copy(ruski.innerHTML);}
-	if (event.target == pepebutton) {copy(pepe.innerHTML);}
-	if (event.target == yeebutton) {copy(yee.innerHTML);}
-	if (event.target == birdbutton) {copy(bird.innerHTML);}
-	if (event.target == adogbutton) {copy(annoyingdog.innerHTML);}
-	if (event.target == seagullbutton) {copy(seagull.innerHTML);}
-	if (event.target == bobbutton) {copy(bob.innerHTML);}
-	if (event.target == dogebutton) {copy(doge.innerHTML);}
-	if (event.target == sanicbutton) {copy(sanic.innerHTML);}
-	if (event.target == letoucanbutton) {copy(letoucan.innerHTML);}
-	if (event.target == shrekbutton) {copy(shrek);}
-	if (event.target == mariojbutton) {copy(mariojump.innerHTML);}
-	if (event.target == mariopbutton) {copy(mariopoop.innerHTML);}
-	if (event.target == obamalargebutton) {copy(obamalarge.innerHTML);}
-	if (event.target == obamasmallbutton) {copy(obamasmall.innerHTML);}
-	if (event.target == dealwithitbutton) {copy(dealwithit.innerHTML);}
-	if (event.target == bigsmokebutton) {copy(bigsmoke);}
-	if (event.target == navysealsbutton) {copy(navyseal);}
+	r=event.target.id.replace("b_","");
+	if (r!="") {
+		copy(stuff[r][1])
+	}
 }
