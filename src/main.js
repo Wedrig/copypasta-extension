@@ -5,9 +5,9 @@ copy = function(r) {
 aa=["annoyingDog","beeMovie","bigSmoke","bob","dealWithIt",
 	"doge","pacertest","hammerAndSickle","leToucan","mario",
 	"marioJumping","marioPooping","navySeals",'obamaNotBadBig',
-	"obamaNotBadSmall","pepe","ratatouille","sanicHegehog",
-	"seagull","shrek2","shrek","shrek3","suprisedBird","theLegend27",
-	"yee"];
+	"obamaNotBadSmall","patrickStar","pepe","ratatouille","sanicHegehog",
+	"seagull","shrek2","shrek","shrek3","skeleton","suprisedBird","theLegend27",
+	"trollFace","yee","yoshi"];
 stuff={
 	"annoyingDog":				["Annoying Dog",					annoyingdog.innerHTML],
 	"beeMovie":					["Bee Movie Script",				beemovie],
@@ -25,15 +25,19 @@ stuff={
 	'obamaNotBadBig':			["Obama Not Bad (Big)",				obamalarge],
 	"obamaNotBadSmall":			["Obama Not Bad (Small)",			obamasmall],
 	"pepe":						["Pepe The Frog",					pepe.innerHTML],
+	"patrickStar":				["Patrick Star",					patrick.innerHTML],
 	"ratatouille":				["Ratatouille Script",				rat.innerHTML],
 	"sanicHegehog":				["Sanic Hegehog",					sanic.innerHTML],			
 	"seagull":					["Seagull",							seagull.innerHTML],	
 	"shrek2":					["Shrek 2 Script",					shrek2script],
 	"shrek":					["Shrek Script",					shrek],
 	"shrek3":					["Shrek The Third Script",			shrek3],
+	"skeleton":					["Spooky Skeleton",					skeleton.innerHTML],
 	"suprisedBird":				["Suprised Bird",					bird.innerHTML],
 	"theLegend27":				["TheLegend27 Script",				thelegend27],
-	"yee":						["Yee",								yee.innerHTML]
+	"trollFace":				["Troll Face",						trollface.innerHTML],
+	"yee":						["Yee",								yee.innerHTML],
+	"yoshi":					["Yoshi",							yoshi.innerHTML]
 }
 for (i=0;i<aa.length;i++) {
 	buttons.innerHTML+=`<button id="b_`+aa[i]+`">`+stuff[aa[i]][0]+`</button>`
