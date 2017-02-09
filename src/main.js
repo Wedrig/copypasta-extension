@@ -1,6 +1,7 @@
 copy = function(r) {
 	d.style.width="450px"
-	d.innerHTML="<textarea>"+r+"</textarea>"
+	R=d.innerHTML
+	d.innerHTML="<button id='backbutton'>Back</button><textarea>"+r+"</textarea>"
 }
 aa=["annoyingDog","ayyLmao","banHammer","beeMovie","bigSmoke","bob","dealWithIt",
 	"doge","pacertest","hammerAndSickle","leToucan","mario",
@@ -30,7 +31,7 @@ stuff={
 	"obamaNotBadSmall":			["Obama Not Bad (Small)",			obamasmall.innerHTML],
 	"pepe":						["Pepe The Frog",					pepe.innerHTML],
 	"patrickStar":				["Patrick Star",					patrick.innerHTML],
-	"ratatouille":				["Ratatouille Script",				rat.innerHTML],
+	"ratatouille":				["Ratatouille Script",				rat],
 	"sanicHegehog":				["Sanic Hegehog",					sanic.innerHTML],			
 	"seagull":					["Seagull",							seagull.innerHTML],	
 	"shrek2":					["Shrek 2 Script",					shrek2script],
@@ -48,7 +49,12 @@ for (i=0;i<aa.length;i++) {
 }
 window.onclick = function(event) {
 	r=event.target.id.replace("b_","");
-	if (r!="") {
+	console.log(r)
+	if (r!="" && r!="backbutton") {
 		copy(stuff[r][1])
+	}
+	if (r=="backbutton") {
+		d.innerHTML=R
+		d.style.width="350px"
 	}
 }
