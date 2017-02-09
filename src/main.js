@@ -2,14 +2,16 @@ copy = function(r) {
 	d.style.width="450px"
 	d.innerHTML="<textarea>"+r+"</textarea>"
 }
-aa=["annoyingDog","beeMovie","bigSmoke","bob","dealWithIt",
+aa=["annoyingDog","ayyLmao","banHammer","beeMovie","bigSmoke","bob","dealWithIt",
 	"doge","pacertest","hammerAndSickle","leToucan","mario",
-	"marioJumping","marioPooping","navySeals",'obamaNotBadBig',
+	"marioJumping","marioPooping","megaman","minion","navySeals",'obamaNotBadBig',
 	"obamaNotBadSmall","patrickStar","pepe","ratatouille","sanicHegehog",
 	"seagull","shrek2","shrek","shrek3","skeleton","suprisedBird","theLegend27",
 	"trollFace","yee","yoshi"];
 stuff={
 	"annoyingDog":				["Annoying Dog",					annoyingdog.innerHTML],
+	"ayyLmao":					["Ayy Lmao",						ayylmao.innerHTML],
+	"banHammer":				["Ban Hammmer",						banhammer.innerHTML],
 	"beeMovie":					["Bee Movie Script",				beemovie],
 	"bigSmoke":					["Big Smoke's Order",				bigsmoke],
 	"bob":                      ["Bob",								bob.innerHTML],
@@ -21,9 +23,11 @@ stuff={
 	"mario":					["Mario",							mario.innerHTML],
 	"marioJumping":				["Mario Jumping",					mariojump.innerHTML],
 	"marioPooping":				["Mario Pooping",					mariopoop.innerHTML],
+	"megaman":					["Megaman",							megaman.innerHTML],
+	"minion":					["Minion",							minion.innerHTML],
 	"navySeals":				["Navy Seals Copypasta",			navyseal],
-	'obamaNotBadBig':			["Obama Not Bad (Big)",				obamalarge],
-	"obamaNotBadSmall":			["Obama Not Bad (Small)",			obamasmall],
+	'obamaNotBadBig':			["Obama Not Bad (Big)",				obamalarge.innerHTML],
+	"obamaNotBadSmall":			["Obama Not Bad (Small)",			obamasmall.innerHTML],
 	"pepe":						["Pepe The Frog",					pepe.innerHTML],
 	"patrickStar":				["Patrick Star",					patrick.innerHTML],
 	"ratatouille":				["Ratatouille Script",				rat.innerHTML],
