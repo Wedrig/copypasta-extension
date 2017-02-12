@@ -3,7 +3,7 @@ copy = function(r) {
 	R=d.innerHTML
 	d.innerHTML="<button id='backbutton'>Back</button><textarea>"+r+"</textarea>"
 }
-aa=["annoyingDog","ayyLmao","banHammer","beeMovie","bigSmoke","bob","dealWithIt",
+aa=["annoyingDog","attackHelicopter","ayyLmao","banHammer","beeMovie","bigSmoke","bob","dealWithIt",
 	"doge","pacertest","hammerAndSickle","leToucan","mario",
 	"marioJumping","marioPooping","megaman","minion","navySeals",'obamaNotBadBig',
 	"obamaNotBadSmall","patrickStar","pepe","ratatouille","sanicHegehog",
@@ -11,6 +11,7 @@ aa=["annoyingDog","ayyLmao","banHammer","beeMovie","bigSmoke","bob","dealWithIt"
 	"trollFace","yee","yoshi"];
 stuff={
 	"annoyingDog":				["Annoying Dog",					annoyingdog.innerHTML],
+	"attackHelicopter":			["Attack Helicopter",				helicopter],
 	"ayyLmao":					["Ayy Lmao",						ayylmao.innerHTML],
 	"banHammer":				["Ban Hammmer",						banhammer.innerHTML],
 	"beeMovie":					["Bee Movie Script",				beemovie],
